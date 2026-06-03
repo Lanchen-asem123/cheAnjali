@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Babygirl ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ffd1dc,#fff0f5);
+    text-align:center;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    color:#ff4d6d;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:250px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.message{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-top:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    line-height:1.8;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:20px;
+}
+
+.hidden{
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Babygirl ❤️</h1>
+
+<p>A tiny website made with lots of love.</p>
+
+<div class="gallery">
+    <img src="photo.jpeg" alt="Memory">
+</div>
+
+<div class="message">
+    <h2>My Beloved Darling ❤️</h2>
+
+    <p>
+        Thank you for every smile, every laugh,
+        every late-night conversation, and every memory.
+    </p>
+
+    <p>
+        I know I'm not perfect, but every day I learn
+        something new because of you.
+        You mean more to me than words can explain.
+    </p>
+
+    <p>
+        No matter what happens, you'll always be
+        someone special to me. ❤️
+    </p>
+
+    <button onclick="showMessage()">Click Me ❤️</button>
+
+    <p id="extra" class="hidden">
+        You make my days brighter and my heart happier. ❤️
+    </p>
+</div>
+
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("extra").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
